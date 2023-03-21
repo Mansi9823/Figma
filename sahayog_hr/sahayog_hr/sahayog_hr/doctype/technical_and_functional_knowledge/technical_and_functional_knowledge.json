@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-02-08 17:49:44.060839",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_rating"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-08 17:50:07.517245",
+ "modified_by": "Administrator",
+ "module": "Sahayog Hr",
+ "name": "Technical and Functional Knowledge",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

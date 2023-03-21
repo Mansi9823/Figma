@@ -1,0 +1,1053 @@
+{
+ "actions": [],
+ "autoname": "format:{full_name}-{MM}-{YYYY}",
+ "creation": "2023-02-08 13:35:27.913421",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_basic_details_tab",
+  "owner",
+  "employee_id",
+  "full_name",
+  "designation",
+  "date_of_joining",
+  "column_break_5",
+  "region",
+  "division",
+  "department",
+  "column_break_10",
+  "appraisal_category",
+  "appraisers_name",
+  "employee_rating_tab",
+  "appraisal_period",
+  "column_break_16",
+  "date_of_appraisal",
+  "section_break_18",
+  "kra_1",
+  "emp_kra_table",
+  "section_break_21",
+  "calculate_section_a",
+  "total_weightage",
+  "sum_of_rating",
+  "total_rating",
+  "overall_rating",
+  "section_break_22",
+  "section_b_1",
+  "technicalfunctionalknowledge",
+  "technical_emp_rating",
+  "column_break_20",
+  "technical_emp_comments",
+  "thougts",
+  "thought_emp_rating",
+  "column_break_24",
+  "employee_comments",
+  "pe",
+  "people_emp_rating",
+  "column_break_28",
+  "people_emp_comments",
+  "managing_title",
+  "managing_emp_rating",
+  "column_break_32",
+  "managing_emp_comments",
+  "decision_title",
+  "decision_emp_rating",
+  "column_break_37",
+  "decision_emp_comment",
+  "planning_section",
+  "planning_emp_rating",
+  "column_break_40",
+  "planning_emp_comment",
+  "leadership_emp_title",
+  "leadership_emp_rating",
+  "column_break_44",
+  "leadership_emp_comments",
+  "section_break_40",
+  "humility_emp_title",
+  "humility_emp_rating",
+  "column_break_35",
+  "humility_emp_comments",
+  "strategic_thinking_section",
+  "strategic_emp_rating",
+  "column_break_54",
+  "strategic_emp_comment",
+  "result_orientation_section",
+  "result_orientation_emp_rating",
+  "column_break_58",
+  "result_orientation_emp_comment",
+  "personal_interpersonal_effectiveness",
+  "personal_and_interpersonal_emp_rating",
+  "column_break_62",
+  "personal_interpersoanl_emp_comment",
+  "people_management_section",
+  "people_mngmnt_emp_rating",
+  "column_break_66",
+  "people_mngmnt_emp_comment",
+  "team_work_section",
+  "team_work_emp_rating",
+  "column_break_70",
+  "team_work_emp_comment",
+  "initiative_section",
+  "initiative_emp_rating",
+  "column_break_74",
+  "initiative_emp_comment",
+  "communication_section",
+  "communication_emp_rating",
+  "column_break_78",
+  "communication_emp_comment",
+  "section_break_27",
+  "calculate_section_b",
+  "overall_section_b_rating",
+  "section_break_91",
+  "personal_dev_plan_section",
+  "data_20",
+  "appra",
+  "appraiser_details_section",
+  "appraiser_name",
+  "column_break_93",
+  "ap_name",
+  "appraiser_user_id",
+  "kra_2",
+  "employee_rating_fetched",
+  "appraiser_rating_calculated",
+  "appraiser_kra_table",
+  "section_break_93",
+  "employee_overall_rating",
+  "column_break_95",
+  "cc",
+  "calculate_appraiser_rating",
+  "column_break_104",
+  "appraiser_overall_rating",
+  "section_break_96",
+  "section_b_2",
+  "employee_section_b_table",
+  "section_break_116",
+  "btn_calculate_app_section_b",
+  "skip_tab",
+  "skip_details_section",
+  "skip_reporting_employee_id",
+  "column_break_110",
+  "skip_reporting_employee_name",
+  "skip_user",
+  "section_break_124",
+  "emp_skip_msg",
+  "section_break_125",
+  "employee_feedback_section",
+  "employee_status",
+  "skip_confirmation_status",
+  "column_break_126",
+  "emp_reason",
+  "skip_kra_sec",
+  "skip_kra_table",
+  "section_break_120",
+  "calculate_skip_rating",
+  "skip_col",
+  "section_break_122",
+  "skip_emp_overall_rating",
+  "column_break_125",
+  "skip_appraiser_overall_rating",
+  "column_break_127",
+  "skip_overall_rating",
+  "section_break_134"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_basic_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employee Basic Details"
+  },
+  {
+   "fetch_from": "owner.employee_id",
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_rating_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.division",
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Data",
+   "label": "Date of Joining",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.region",
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appraisal_period",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appraisal Period",
+   "options": "\nMid-Term Appraisal\nFinal-Term Appraisal",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_appraisal",
+   "fieldtype": "Date",
+   "label": "Date of Appraisal",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.reporting_employee",
+   "fieldname": "appraisers_name",
+   "fieldtype": "Data",
+   "label": "Appraiser's Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appra",
+   "fieldtype": "Tab Break",
+   "label": "Appraiser"
+  },
+  {
+   "fieldname": "skip_tab",
+   "fieldtype": "Tab Break",
+   "label": " SKIP Level"
+  },
+  {
+   "collapsible": 1,
+   "description": "Please ensure that the weights total to 50 ",
+   "fieldname": "kra_1",
+   "fieldtype": "Heading",
+   "label": "Section A: Key Result Area's"
+  },
+  {
+   "description": "Please ensure that the weights total to 50 ",
+   "fieldname": "kra_2",
+   "fieldtype": "Section Break",
+   "label": "Section A: Key Result Area's"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_b_1",
+   "fieldtype": "Heading",
+   "label": "Section B: Personal Effectiveness Index / Leadership Competencies"
+  },
+  {
+   "depends_on": "eval:doc.employee_rating_fetched==\"Fetched\"",
+   "fieldname": "section_b_2",
+   "fieldtype": "Section Break",
+   "label": "Section B: Personal Effectiveness Index / Leadership Competencies"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "personal_dev_plan_section",
+   "fieldtype": "Heading",
+   "label": "Section C:The Personal Developmental Plan "
+  },
+  {
+   "fieldname": "data_20",
+   "fieldtype": "Data",
+   "label": "rating"
+  },
+  {
+   "fieldname": "emp_kra_table",
+   "fieldtype": "Table",
+   "label": "Key Result Area's",
+   "options": "Employee KRA",
+   "read_only_depends_on": "eval:doc.employee_rating_fetched==\"Fetched\"",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "description": "Exhibits comprehensive understanding of the core set of Technical and functional aspects of particular function",
+   "fieldname": "technicalfunctionalknowledge",
+   "fieldtype": "Section Break",
+   "label": "Technical & Functional knowledge"
+  },
+  {
+   "fieldname": "technical_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\" || doc.appraisal_category == \"2\" || doc.appraisal_category == \"3\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "technical_emp_comments",
+   "fieldtype": "Small Text",
+   "label": "Employee Comments",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\"",
+   "description": "Ability to consider the total environment, including people  process and business. Synergize information and perspectives in order to arrive at a complete assessment and solutions.  Has the organization to think through the consequences of decisions and their impact.",
+   "fieldname": "thougts",
+   "fieldtype": "Section Break",
+   "label": "Thought leadership-holistic and strategic perspective"
+  },
+  {
+   "fieldname": "thought_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_comments",
+   "fieldtype": "Small Text",
+   "label": "Employee Comments",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\"",
+   "description": "Assesses the strengths and weaknesses of an individual  and determines the best development approach to enable him/her  to reach full potential. Coaches and mentors others for their  personal and professional growth.",
+   "fieldname": "pe",
+   "fieldtype": "Section Break",
+   "label": "People Development"
+  },
+  {
+   "fieldname": "people_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "people_emp_comments",
+   "fieldtype": "Small Text",
+   "label": "Employee Comments",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\"",
+   "description": "Strives to learn continuously from anyone for self and  organisational growth.",
+   "fieldname": "humility_emp_title",
+   "fieldtype": "Section Break",
+   "label": "Humility to learn"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\"",
+   "description": "Builds effective relationships across functions/levels/roles. Utilizes those relationships effectively to achieve the goals of the organization  and self. Connects well with people internally and externally.",
+   "fieldname": "managing_title",
+   "fieldtype": "Section Break",
+   "label": "Managing relationships \u2013 collaboration\t"
+  },
+  {
+   "fieldname": "humility_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "managing_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "managing_emp_comments",
+   "fieldtype": "Small Text",
+   "label": "Employee Comments",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "humility_emp_comments",
+   "fieldtype": "Small Text",
+   "label": "Employee Comments",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\" || doc.appraisal_category == \"3\"",
+   "description": "Is capable of identifying the precise cause of the problem, carrying out root cause analysis and identify deviations from standards or objectives.  Once he/she identifies the problem, implements a suitable course of action  without delay. Gathers and provides resources to achieve objectives.",
+   "fieldname": "decision_title",
+   "fieldtype": "Section Break",
+   "label": "Decision making & problem solving\t"
+  },
+  {
+   "fieldname": "decision_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\" || doc.appraisal_category == \"3\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "decision_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\"",
+   "description": "Plans and prioritizes all activities. Manages time and task effectively to meet the organization's objectives",
+   "fieldname": "planning_section",
+   "fieldtype": "Section Break",
+   "label": "Planning"
+  },
+  {
+   "fieldname": "planning_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"1\"",
+   "description": "Using the power of self appropriately to guide and lead a team towards a shared vision",
+   "fieldname": "leadership_emp_title",
+   "fieldtype": "Section Break",
+   "label": "Leadership Presence"
+  },
+  {
+   "fieldname": "leadership_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"1\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "leadership_emp_comments",
+   "fieldtype": "Small Text",
+   "label": "Employee Comments",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planning_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.appraisal_category",
+   "fieldname": "appraisal_category",
+   "fieldtype": "Data",
+   "label": "Appraisal Category",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"2\"",
+   "description": "Establishes and strengthens the processes, teams and Organization's Competitive advantage and position. Provides direction",
+   "fieldname": "strategic_thinking_section",
+   "fieldtype": "Section Break",
+   "label": "Strategic Thinking"
+  },
+  {
+   "fieldname": "strategic_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"2\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "strategic_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"2\"",
+   "description": "Consistently delivers against goals and targets simultaneously adding value A concern for achievement and acquiring a standard of excellence",
+   "fieldname": "result_orientation_section",
+   "fieldtype": "Section Break",
+   "label": "Result Orientation"
+  },
+  {
+   "fieldname": "result_orientation_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"2\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "result_orientation_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"2\"",
+   "description": "Exhibits a willingness and ability to grow professionally and helps others grow as well",
+   "fieldname": "personal_interpersonal_effectiveness",
+   "fieldtype": "Section Break",
+   "label": "Personal & Interpersonal Effectiveness"
+  },
+  {
+   "fieldname": "personal_and_interpersonal_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"2\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "personal_interpersoanl_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"2\"",
+   "description": "Realizes and leverages on the full potential of people, achieves cohesiveness, reduces divisionary tendencies, nurtures talent and creates a climate of trust",
+   "fieldname": "people_management_section",
+   "fieldtype": "Section Break",
+   "label": "People Management"
+  },
+  {
+   "fieldname": "people_mngmnt_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"2\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_66",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "people_mngmnt_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"3\"",
+   "description": "A cooperative attitude between those work together on a task / series of task and Job",
+   "fieldname": "team_work_section",
+   "fieldtype": "Section Break",
+   "label": "Team Work"
+  },
+  {
+   "fieldname": "team_work_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"3\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_70",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "team_work_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"3\"",
+   "description": "A preference to act and doing more than what is required or expected",
+   "fieldname": "initiative_section",
+   "fieldtype": "Section Break",
+   "label": "Initiative"
+  },
+  {
+   "fieldname": "initiative_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"3\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_74",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initiative_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.appraisal_category == \"3\"",
+   "description": "An ability to impart or exchange and understand thoughts and ideas orally and in written",
+   "fieldname": "communication_section",
+   "fieldtype": "Section Break",
+   "label": "Communication"
+  },
+  {
+   "fieldname": "communication_emp_rating",
+   "fieldtype": "Select",
+   "label": "Employee Rating",
+   "mandatory_depends_on": "eval:doc.appraisal_category == \"3\"",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "communication_emp_comment",
+   "fieldtype": "Small Text",
+   "label": "Employee Comment",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "total_weightage",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "total weightage"
+  },
+  {
+   "fieldname": "appraiser_kra_table",
+   "fieldtype": "Table",
+   "label": "Key Result Area's",
+   "options": "Appraiser KRA"
+  },
+  {
+   "default": "Not-Fetched",
+   "fieldname": "employee_rating_fetched",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Employee rating fetched?",
+   "options": "Not-Fetched\nFetched"
+  },
+  {
+   "fieldname": "sum_of_rating",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sum of Rating"
+  },
+  {
+   "fieldname": "total_rating",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Total Rating"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overall_rating",
+   "fieldtype": "Data",
+   "label": "Overall Rating",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:doc.employee_rating_fetched==\"Fetched\"",
+   "description": "Overall Rating Out of 5",
+   "fieldname": "employee_overall_rating",
+   "fieldtype": "Data",
+   "label": "Employee Overall Rating",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "description": "Overall Rating Out of 5",
+   "fieldname": "appraiser_overall_rating",
+   "fieldtype": "Data",
+   "label": "Appraiser Overall Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_96",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_rating_fetched==\"Fetched\"",
+   "fieldname": "calculate_appraiser_rating",
+   "fieldtype": "Button",
+   "label": "Calculate Appraiser Rating"
+  },
+  {
+   "fieldname": "section_break_93",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_95",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "User Email",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "employee_id.reports_to",
+   "fieldname": "appraiser_name",
+   "fieldtype": "Data",
+   "label": "Appraiser Employee ID"
+  },
+  {
+   "fieldname": "column_break_93",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.reporting_employee",
+   "fieldname": "ap_name",
+   "fieldtype": "Data",
+   "label": "Appraiser Employee Name"
+  },
+  {
+   "fieldname": "column_break_110",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.higher_reporting_employee_id",
+   "fieldname": "skip_reporting_employee_id",
+   "fieldtype": "Data",
+   "label": "SKIP Level Employee ID"
+  },
+  {
+   "fetch_from": "employee_id.higher_reporting_employee_name",
+   "fieldname": "skip_reporting_employee_name",
+   "fieldtype": "Data",
+   "label": "SKIP Level Employee Name"
+  },
+  {
+   "fetch_from": "employee_id.higher_reporting_employee_user_id",
+   "fieldname": "skip_user",
+   "fieldtype": "Data",
+   "label": "SKIP User"
+  },
+  {
+   "fetch_from": "employee_id.reporting_employee_user_id",
+   "fieldname": "appraiser_user_id",
+   "fieldtype": "Data",
+   "label": "Appraiser User ID"
+  },
+  {
+   "fieldname": "skip_kra_table",
+   "fieldtype": "Table",
+   "label": "Key Result Area",
+   "options": "SKIP KRA"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "appraiser_details_section",
+   "fieldtype": "Section Break",
+   "label": "Appraiser Details"
+  },
+  {
+   "fieldname": "column_break_104",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Heading"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "skip_details_section",
+   "fieldtype": "Section Break",
+   "label": "SKIP Details"
+  },
+  {
+   "fieldname": "section_break_120",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate_skip_rating",
+   "fieldtype": "Button",
+   "label": "Calculate Overall Rating"
+  },
+  {
+   "fieldname": "section_break_122",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "skip_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "skip_appraiser_overall_rating",
+   "fieldtype": "Data",
+   "label": "Appraiser Overall Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "skip_emp_overall_rating",
+   "fieldtype": "Data",
+   "label": "Employee Overall Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_125",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_127",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculate_section_b",
+   "fieldtype": "Button",
+   "label": "Calculate Section B"
+  },
+  {
+   "fieldname": "overall_section_b_rating",
+   "fieldtype": "Data",
+   "label": "Overall Section B Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_91",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_rating_fetched==\"Fetched\"",
+   "fieldname": "employee_section_b_table",
+   "fieldtype": "Table",
+   "label": "Section B",
+   "options": "Employee Section B Table"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate_section_a",
+   "fieldtype": "Button",
+   "label": "Calculate Section A"
+  },
+  {
+   "fieldname": "emp_reason",
+   "fieldtype": "Text Editor",
+   "label": "Employee Feedback",
+   "print_width": "150px",
+   "read_only": 1,
+   "width": "150px"
+  },
+  {
+   "depends_on": "eval:doc.skip_confirmation_status==\"SKIP Rating Required\"",
+   "description": "Please ensure that the weights total to 50 ",
+   "fieldname": "skip_kra_sec",
+   "fieldtype": "Section Break",
+   "label": "Section A: Key Result Area's"
+  },
+  {
+   "fieldname": "section_break_134",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_status",
+   "fieldtype": "Select",
+   "label": "Employee Status",
+   "options": "\nSatisfied\nNot-Satisfied",
+   "read_only": 1,
+   "width": "50px"
+  },
+  {
+   "fieldname": "section_break_124",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emp_skip_msg",
+   "fieldtype": "Heading",
+   "label": "To activate this tab, you must have applied to skip your manager appraisal"
+  },
+  {
+   "fieldname": "section_break_125",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "skip_confirmation_status",
+   "fieldtype": "Select",
+   "label": "Confirmation Status",
+   "options": "\nSKIP Rating Required\nSKIP Rating Not-Required"
+  },
+  {
+   "fieldname": "column_break_126",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_feedback_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Feedback"
+  },
+  {
+   "fieldname": "skip_overall_rating",
+   "fieldtype": "Data",
+   "label": "Skip Overall Rating",
+   "read_only": 1
+  },
+  {
+   "default": "no",
+   "fieldname": "appraiser_rating_calculated",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Appraiser Rating Calculated",
+   "options": "\nno\nyes"
+  },
+  {
+   "fieldname": "section_break_116",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "btn_calculate_app_section_b",
+   "fieldtype": "Button",
+   "label": "Calculate Section B"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-25 12:14:19.953268",
+ "modified_by": "Administrator",
+ "module": "Sahayog Hr",
+ "name": "Performance Appraisal",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

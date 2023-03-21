@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-27 10:56:04.713541",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "full_name",
+  "designation",
+  "column_break_oglxg",
+  "region",
+  "division",
+  "department",
+  "section_break_bvsym",
+  "it_department_stock_record",
+  "section_break_bog58",
+  "item_nam",
+  "check_item",
+  "section_break_owjmh",
+  "manufacture_sr_no",
+  "column_break_ct3dm",
+  "invoice_no",
+  "assets_allocation_form_tab",
+  "branch_manager",
+  "section_break_g2ef2",
+  "fname",
+  "assets_type",
+  "column_break_veora",
+  "lname",
+  "serial_no",
+  "section_break_hietu",
+  "assets_description",
+  "date_of_purchased",
+  "asset_owner_sign",
+  "section_break_1w9cf",
+  "submit"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bvsym",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "it_department_stock_record",
+   "fieldtype": "Tab Break",
+   "label": "IT Department Stock Record"
+  },
+  {
+   "fieldname": "section_break_bog58",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_item",
+   "fieldtype": "Table",
+   "label": "Check Item",
+   "options": "Check Item"
+  },
+  {
+   "fieldname": "item_nam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Name ",
+   "options": "Check Item"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region "
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division "
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department ",
+   "options": "Department"
+  },
+  {
+   "fieldname": "assets_allocation_form_tab",
+   "fieldtype": "Tab Break",
+   "label": "Assets Allocation Form "
+  },
+  {
+   "fieldname": "branch_manager",
+   "fieldtype": "Heading",
+   "label": "Branch Manager"
+  },
+  {
+   "fieldname": "assets_type",
+   "fieldtype": "Select",
+   "label": "Assets Type "
+  },
+  {
+   "fieldname": "section_break_g2ef2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "label": "Fname"
+  },
+  {
+   "fieldname": "lname",
+   "fieldtype": "Data",
+   "label": "Lname"
+  },
+  {
+   "fieldname": "column_break_veora",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hietu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assets_description",
+   "fieldtype": "Small Text",
+   "label": "Assets description"
+  },
+  {
+   "fieldname": "date_of_purchased",
+   "fieldtype": "Date",
+   "label": "Date of purchased "
+  },
+  {
+   "fieldname": "asset_owner_sign",
+   "fieldtype": "Attach Image",
+   "label": "Asset owner sign"
+  },
+  {
+   "fieldname": "section_break_1w9cf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "Submit"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No."
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_oglxg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacture_sr_no",
+   "fieldtype": "Data",
+   "label": "Manufacture Sr No."
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No."
+  },
+  {
+   "fieldname": "column_break_ct3dm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_owjmh",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-21 10:54:51.952520",
+ "modified_by": "Administrator",
+ "module": "Sahayog Hr",
+ "name": "IT Department Stock Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

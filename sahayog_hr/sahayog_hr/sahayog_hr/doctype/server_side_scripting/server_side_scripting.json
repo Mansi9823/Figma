@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-28 11:50:45.488400",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "client_side_doc",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "column_break_zguwb",
+  "email",
+  "mob_no",
+  "dob",
+  "age",
+  "section_break_8zkio",
+  "family_member"
+ ],
+ "fields": [
+  {
+   "fieldname": "enable",
+   "fieldtype": "Button",
+   "label": "Enable "
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name "
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last Name "
+  },
+  {
+   "fieldname": "column_break_zguwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mob_no",
+   "fieldtype": "Int",
+   "label": "Mob No "
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "section_break_8zkio",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "family_member",
+   "fieldtype": "Table",
+   "label": "Family member ",
+   "options": "Family Member"
+  },
+  {
+   "fieldname": "client_side_doc",
+   "fieldtype": "Link",
+   "label": "client side doc",
+   "options": "server side scripting"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-28 12:16:38.164995",
+ "modified_by": "Administrator",
+ "module": "Sahayog Hr",
+ "name": "server side scripting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

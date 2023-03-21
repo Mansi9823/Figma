@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-02-08 16:05:20.796088",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kras",
+  "weights",
+  "rating",
+  "comm"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "kras",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KRA's",
+   "print_width": "80px",
+   "width": "80px"
+  },
+  {
+   "columns": 1,
+   "fieldname": "weights",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weights"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rating",
+   "options": "\nOutstanding\nExceeds Expectations\nMeets Expectations\nNeeds Improvement\nPoor"
+  },
+  {
+   "columns": 3,
+   "fieldname": "comm",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-16 12:28:06.155432",
+ "modified_by": "Administrator",
+ "module": "Sahayog Hr",
+ "name": "Employee KRA",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

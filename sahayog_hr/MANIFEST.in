@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sahayog_hr *.css
+recursive-include sahayog_hr *.csv
+recursive-include sahayog_hr *.html
+recursive-include sahayog_hr *.ico
+recursive-include sahayog_hr *.js
+recursive-include sahayog_hr *.json
+recursive-include sahayog_hr *.md
+recursive-include sahayog_hr *.png
+recursive-include sahayog_hr *.py
+recursive-include sahayog_hr *.svg
+recursive-include sahayog_hr *.txt
+recursive-exclude sahayog_hr *.pyc
